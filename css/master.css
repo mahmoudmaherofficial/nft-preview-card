@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Outfit";
+  src: url(../fonts/Outfit-VariableFont.ttf);
+}
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--Very-dark-blue-main-BG);
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit";
+  font-size: 18px;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+main.nft {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Soft-blue);
+}
+main.nft .card {
+  background-color: var(--Very-dark-blue-card-BG);
+  padding: 1.5rem;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+main.nft .card .main-image {
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+main.nft .card .main-image img {
+  width: 100%;
+  display: block;
+}
+main.nft .card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+main.nft .card h2.tittle {
+  color: var(--White);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+main.nft .card P.des {
+  line-height: 1.4;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+main.nft .card .price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main.nft .card .price .diamonds {
+  display: inherit;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main.nft .card .price .diamonds img {
+  margin-right: 0.5rem;
+}
+main.nft .card .price .diamonds p {
+  font-size: 1rem;
+  color: var(--Cyan);
+}
+main.nft .card .price .time {
+  display: inherit;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main.nft .card .price .time img {
+  margin-right: 0.5rem;
+}
+main.nft .card .price .time p {
+  font-size: 1rem;
+}
+main.nft .card hr {
+  border: none;
+  background-color: var(--Very-dark-blue-line);
+  height: 0.1rem;
+}
+main.nft .card .author {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+main.nft .card .author img {
+  width: 2rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--White);
+}
+main.nft .card .author p {
+  font-size: 1rem;
+  font-weight: normal;
+}
+main.nft .card .author p span {
+  color: var(--White);
+}
